@@ -12,12 +12,12 @@
 </head>
 <body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col justify-between">
 
-    <!-- Cabeçalho Profissional com a sua Marca -->
+    <!-- Cabeçalho Profissional com a sua Marca e Credenciais -->
     <header class="bg-blue-950 text-white shadow-xl py-8 px-4 border-b-4 border-amber-500">
         <div class="max-w-5xl mx-auto text-center">
-            <span class="bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Curadoria de Danilo Belcorso | @dbelcorso</span>
+            <span class="bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">Danilo Belcorso | Corretor e Avaliador (@dbelcorso)</span>
             <h1 class="text-3xl md:text-4xl font-extrabold mt-3 tracking-tight">Portal de Certidões Imobiliárias</h1>
-            <p class="text-slate-300 mt-2 text-sm md:text-base max-w-2xl mx-auto">Acesso rápido e seguro aos links oficiais de prefeituras, cartórios de registro de imóveis, tribunais e protestos para corretores exigentes.</p>
+            <p class="text-slate-300 mt-2 text-sm md:text-base max-w-2xl mx-auto">Acesso completo e rigoroso aos links oficiais de prefeituras, cartórios, tribunais e órgãos federais para segurança jurídica total nas negociações.</p>
         </div>
     </header>
 
@@ -52,7 +52,7 @@
             <div class="relative z-10">
                 <span class="bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Capacitação Profissional</span>
                 <h2 class="text-2xl md:text-3xl font-extrabold mt-3 mb-3">Quer dominar a análise de documentação e fechar vendas com segurança jurídica?</h2>
-                <p class="text-slate-300 mb-8 text-sm md:text-base max-w-xl mx-auto">Conheça o método prático desenvolvido para corretores iniciantes e experientes alavancarem suas negociações sem medo de riscos jurídicos.</p>
+                <p class="text-slate-300 mb-8 text-sm md:text-base max-w-xl mx-auto">Conheça o método prático desenvolvido para corretores alavancarem suas negociações sem medo de riscos jurídicos ou perdas de comissão.</p>
                 <a href="https://instagram.com/dbelcorso" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl transition shadow-lg text-base">Falar com Danilo Belcorso (@dbelcorso) &rarr;</a>
             </div>
         </div>
@@ -65,103 +65,109 @@
         <p class="mt-2 text-slate-500">Aviso: Os links direcionam para os portais institucionais públicos e oficiais dos órgãos competentes.</p>
     </footer>
 
-    <!-- Banco de Dados Completo e Robusto de Cidades e Certidões -->
+    <!-- Banco de Dados Completo com Todas as Certidões Obrigatórias e Opcionais Solicitadas -->
     <script>
-        const conjuntoCertidoesPadrao = [
-            { nome: "📄 Certidão Negativa de Tributos (Prefeitura / IPTU)", url: "https://www.google.com/search?q=prefeitura+municipal+certidao+negativa+debitos" },
-            { nome: "🏠 Cartório de Registro de Imóveis (ONR - Ônus e Ações)", url: "https://www.registradores.onr.org.br" },
-            { nome: "⚖️ Certidões Cíveis e Criminais (Justiça Estadual)", url: "https://esaj.tjsp.jus.br" },
-            { nome: "🏛️ Execuções Fiscais Estaduais", url: "https://www.tjsp.jus.br" },
-            { nome: "🏢 Tabelião de Protestos (Consulta de Protestos)", url: "https://www.protestosp.com.br" },
-            { nome: "💼 Justiça do Trabalho (CNDT - Certidão Trabalhista)", url: "https://www.tst.jus.br/cndt" },
-            { nome: "⚖️ Justiça Federal (Ações e Execuções Federais)", url: "https://www.trf3.jus.br" }
+        const conjuntoCertidoesCompleto = [
+            { nome: "🏠 Matrícula Atualizada do Imóvel (Cartório de Registro)", url: "https://www.registradores.onr.org.br" },
+            { nome: "📄 Certidão Negativa de Ônus Reais e Ações", url: "https://www.registradores.onr.org.br" },
+            { nome: "🏛️ Débitos Mobiliários e Tributos Municipais (IPTU)", url: "https://www.google.com/search?q=prefeitura+municipal+certidao+negativa+debitos" },
+            { nome: "⚖️ Distribuidor Cível Estadual (Ações Cíveis)", url: "https://esaj.tjsp.jus.br" },
+            { nome: "🏛️ Certidão de Execuções Fiscais (Estadual)", url: "https://esaj.tjsp.jus.br" },
+            { nome: "⚖️ Certidão de Distribuição de Ações Criminais", url: "https://esaj.tjsp.jus.br" },
+            { nome: "🏢 Certidão de Falências, Concordatas e Recuperações", url: "https://esaj.tjsp.jus.br" },
+            { nome: "📊 Certidão Negativa da Fazenda Estadual", url: "https://www.tjsp.jus.br" },
+            { nome: "🔍 Certidão de Protestos dos Cartórios da Cidade", url: "https://www.protestosp.com.br" },
+            { nome: "💍 Certidão de Casamento Atualizada (com averbações/regime)", url: "https://www.registrocivil.org.br" },
+            { nome: "💼 Dívidas / Débitos Trabalhistas (CNDT)", url: "https://www.tst.jus.br/cndt" },
+            { nome: "⚖️ Certidão Negativa da Justiça Federal", url: "https://www.trf3.jus.br" },
+            { nome: "🌐 Certidão Negativa da Dívida Ativa da União", url: "https://www.gov.br/pt-br/servicos/certidao-de-regularidade-fiscal" }
         ];
 
         const baseDados = [
             // São Paulo - Polos Principais e Interior Completo
-            { cidade: "Osasco", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "São Paulo (Capital)", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Barueri", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Guarulhos", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Campinas", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Santo André", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "São Bernardo do Campo", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "São Caetano do Sul", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Diadema", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Mauá", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Mogi das Cruzes", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Suzano", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Itaquaquecetuba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Carapicuíba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Itapevi", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Cotia", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Jundiaí", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Sorocaba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Santos", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Guarujá", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Praia Grande", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "São José dos Campos", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Taubaté", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Ribeirão Preto", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Bauru", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "São José do Rio Preto", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Piracicaba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Americana", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Limeira", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Araraquara", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Presidente Prudente", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Marília", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Franca", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Botucatu", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Bragança Paulista", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Atibaia", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Indaiatuba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Hortolândia", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Sumaré", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Taboão da Serra", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Embu das Artes", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Aguaí", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Amparo", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Andradina", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Araçatuba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Araras", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Artur Nogueira", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Arujá", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Assis", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Avaré", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Barretos", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Batatais", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Bebedouro", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Bertioga", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Birigui", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Caçapava", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Caieiras", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Cajamar", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Campo Limpo Paulista", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Campos do Jordão", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Caraguatatuba", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Catanduva", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Cubatão", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Itanhaém", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Itapetininga", estado: "SP", links: conjuntoCertidoesPadrao },
-            { cidade: "Jacareí", estado: "SP", links: conjuntoCertidoesPadrao },
+            { cidade: "Osasco", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "São Paulo (Capital)", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Barueri", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Guarulhos", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Campinas", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Santo André", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "São Bernardo do Campo", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "São Caetano do Sul", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Diadema", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Mauá", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Mogi das Cruzes", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Suzano", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Itaquaquecetuba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Carapicuíba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Itapevi", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Cotia", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Jundiaí", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Sorocaba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Santos", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Guarujá", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Praia Grande", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "São José dos Campos", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Taubaté", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Ribeirão Preto", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Bauru", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "São José do Rio Preto", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Piracicaba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Americana", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Limeira", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Araraquara", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Presidente Prudente", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Marília", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Franca", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Botucatu", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Bragança Paulista", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Atibaia", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Indaiatuba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Hortolândia", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Sumaré", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Taboão da Serra", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Embu das Artes", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Aguaí", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Amparo", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Andradina", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Araçatuba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Araras", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Artur Nogueira", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Arujá", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Assis", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Avaré", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Barretos", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Batatais", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Bebedouro", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Bertioga", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Birigui", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Caçapava", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Caieiras", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Cajamar", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Campo Limpo Paulista", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Campos do Jordão", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Caraguatatuba", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Catanduva", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Cubatão", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Itanhaém", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Itapetininga", estado: "SP", links: conjuntoCertidoesCompleto },
+            { cidade: "Jacareí", estado: "SP", links: conjuntoCertidoesCompleto },
             
             // Rio de Janeiro
-            { cidade: "Rio de Janeiro (Capital)", estado: "RJ", links: conjuntoCertidoesPadrao },
-            { cidade: "Niterói", estado: "RJ", links: conjuntoCertidoesPadrao },
-            { cidade: "Duque de Caxias", estado: "RJ", links: conjuntoCertidoesPadrao },
-            { cidade: "Nova Iguaçu", estado: "RJ", links: conjuntoCertidoesPadrao },
-            { cidade: "São Gonçalo", estado: "RJ", links: conjuntoCertidoesPadrao },
-            { cidade: "Petrópolis", estado: "RJ", links: conjuntoCertidoesPadrao },
-            { cidade: "Cabo Frio", estado: "RJ", links: conjuntoCertidoesPadrao },
+            { cidade: "Rio de Janeiro (Capital)", estado: "RJ", links: conjuntoCertidoesCompleto },
+            { cidade: "Niterói", estado: "RJ", links: conjuntoCertidoesCompleto },
+            { cidade: "Duque de Caxias", estado: "RJ", links: conjuntoCertidoesCompleto },
+            { cidade: "Nova Iguaçu", estado: "RJ", links: conjuntoCertidoesCompleto },
+            { cidade: "São Gonçalo", estado: "RJ", links: conjuntoCertidoesCompleto },
+            { cidade: "Petrópolis", estado: "RJ", links: conjuntoCertidoesCompleto },
+            { cidade: "Cabo Frio", estado: "RJ", links: conjuntoCertidoesCompleto },
 
             // Minas Gerais
-            { cidade: "Belo Horizonte", estado: "MG", links: conjuntoCertidoesPadrao },
-            { cidade: "Uberlândia", estado: "MG", links: conjuntoCertidoesPadrao },
-            { cidade: "Contagem", estado: "MG", links: conjuntoCertidoesPadrao },
-            { cidade: "Juiz de Fora", estado: "MG", links: conjuntoCertidoesPadrao },
-            { cidade: "Betim", estado: "MG", links: conjuntoCertidoesPadrao },
-            { cidade: "Uberaba", estado: "MG", links: conjuntoCertidoesPadrao }
+            { cidade: "Belo Horizonte", estado: "MG", links: conjuntoCertidoesCompleto },
+            { cidade: "Uberlândia", estado: "MG", links: conjuntoCertidoesCompleto },
+            { cidade: "Contagem", estado: "MG", links: conjuntoCertidoesCompleto },
+            { cidade: "Juiz de Fora", estado: "MG", links: conjuntoCertidoesCompleto },
+            { cidade: "Betim", estado: "MG", links: conjuntoCertidoesCompleto },
+            { cidade: "Uberaba", estado: "MG", links: conjuntoCertidoesCompleto }
         ];
 
         const container = document.getElementById('cityContainer');
@@ -220,3 +226,4 @@
     </script>
 </body>
 </html>
+
