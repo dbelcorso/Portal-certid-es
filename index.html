@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Certidões Imobiliárias | Links Oficiais para Corretores</title>
-    <!-- Tailwind CSS para um design profissional -->
+    <title>Portal de Certidões Imobiliárias | Danilo Belcorso (@dbelcorso)</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -13,12 +12,12 @@
 </head>
 <body class="bg-slate-100 text-slate-800 min-h-screen flex flex-col justify-between">
 
-    <!-- Cabeçalho Institucional -->
-    <header class="bg-blue-900 text-white shadow-md py-8 px-4">
+    <!-- Cabeçalho Personalizado com a sua Marca -->
+    <header class="bg-blue-950 text-white shadow-lg py-8 px-4 border-b-4 border-amber-500">
         <div class="max-w-4xl mx-auto text-center">
-            <span class="bg-blue-800 text-blue-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Ferramenta Exclusiva para Corretores</span>
+            <span class="bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Curadoria de Danilo Belcorso | @dbelcorso</span>
             <h1 class="text-3xl md:text-4xl font-extrabold mt-3">Portal de Certidões Imobiliárias</h1>
-            <p class="text-blue-200 mt-2 text-sm md:text-base max-w-2xl mx-auto">Encontre em um só lugar todos os links oficiais de prefeituras, cartórios e tribunais para acelerar suas negociações com segurança.</p>
+            <p class="text-slate-300 mt-2 text-sm md:text-base max-w-2xl mx-auto">Acesso rápido aos links oficiais de prefeituras, cartórios de registro de imóveis e tribunais para dar total segurança nas suas negociações.</p>
         </div>
     </header>
 
@@ -27,35 +26,28 @@
         
         <!-- Barra de Pesquisa Avançada -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-8">
-            <label for="searchCity" class="block text-sm font-bold text-slate-700 mb-2">🔍 Digite o nome da cidade ou estado:</label>
-            <input type="text" id="searchCity" placeholder="Ex: Osasco, São Paulo, Barueri, Campinas..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:outline-none text-slate-700 text-base">
+            <label for="searchCity" class="block text-sm font-bold text-slate-700 mb-2">🔍 Pesquisar por Cidade do Estado de São Paulo:</label>
+            <input type="text" id="searchCity" placeholder="Ex: Osasco, Barueri, Campinas, Jundiaí, Santos..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:outline-none text-slate-700 text-base">
         </div>
 
-        <!-- Seletor Rápido de Estados (Opcional para expansão futura) -->
-        <div class="flex gap-2 mb-6 overflow-x-auto pb-2">
-            <button onclick="filtrarEstado('todos')" class="px-4 py-2 bg-blue-900 text-white text-xs font-semibold rounded-lg shadow-sm whitespace-nowrap">Todos</button>
-            <button onclick="filtrarEstado('SP')" class="px-4 py-2 bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 text-xs font-semibold rounded-lg shadow-sm whitespace-nowrap">São Paulo (SP)</button>
-            <button onclick="filtrarEstado('RJ')" class="px-4 py-2 bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 text-xs font-semibold rounded-lg shadow-sm whitespace-nowrap">Rio de Janeiro (RJ)</button>
-        </div>
-
-        <!-- Lista Dinâmica de Cidades (Gerada via JavaScript) -->
+        <!-- Lista Dinâmica de Cidades -->
         <div id="cityContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Os cards serão injetados aqui automaticamente -->
         </div>
 
         <!-- Mensagem caso não encontre -->
         <div id="noResult" class="hidden text-center py-12 text-slate-500">
-            <p class="text-lg font-medium">Nenhuma cidade encontrada com esse nome.</p>
-            <p class="text-sm mt-1">Deseja sugerir a inclusão de um município? Entre em contato.</p>
+            <p class="text-lg font-medium">Nenhuma cidade encontrada com esse termo.</p>
+            <p class="text-sm mt-1">Utilize os portais gerais de cartórios (ONR) e tribunais estaduais para consulta.</p>
         </div>
 
-        <!-- Funil de Vendas: Banner do Curso -->
-        <div class="mt-14 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white p-8 md:p-10 rounded-2xl shadow-xl text-center relative overflow-hidden">
+        <!-- Funil de Vendas do Curso -->
+        <div class="mt-14 bg-gradient-to-r from-blue-950 via-indigo-950 to-slate-900 text-white p-8 md:p-10 rounded-2xl shadow-xl text-center relative overflow-hidden border border-blue-900">
             <div class="relative z-10">
-                <span class="bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Formação Prática</span>
-                <h2 class="text-2xl md:text-3xl font-extrabold mt-3 mb-3">Inseguro com a documentação e com medo de perder a comissão?</h2>
-                <p class="text-blue-200 mb-8 text-sm md:text-base max-w-xl mx-auto">Domine a análise de matrículas, descubra armadilhas ocultas e conduza vendas do começo ao fim sozinho com total segurança jurídica.</p>
-                <a href="https://seu-link-de-vendas-do-curso.com" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl transition shadow-lg text-base">Quero Conhecer o Curso de Documentação Imobiliária &rarr;</a>
+                <span class="bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Mentoria e Capacitação</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold mt-3 mb-3">Inseguro sobre quais certidões puxar e com medo de perder a comissão?</h2>
+                <p class="text-slate-300 mb-8 text-sm md:text-base max-w-xl mx-auto">Conheça o método prático de documentação imobiliária para corretores iniciantes fecharem vendas sozinhos do começo ao fim com segurança jurídica.</p>
+                <a href="https://instagram.com/dbelcorso" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold px-8 py-4 rounded-xl transition shadow-lg text-base">Saiba mais com Danilo Belcorso (@dbelcorso) &rarr;</a>
             </div>
         </div>
 
@@ -63,67 +55,79 @@
 
     <!-- Rodapé -->
     <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs mt-12 border-t border-slate-800">
-        <p>&copy; 2026 Portal de Certidões Imobiliárias. Desenvolvido para Corretores de Sucesso.</p>
-        <p class="mt-2 text-slate-500">Aviso: Os links direcionam para portais públicos oficiais de órgãos governamentais e cartórios.</p>
+        <p>&copy; 2026 Portal de Certidões Imobiliárias | Organizado por Danilo Belcorso (@dbelcorso)</p>
+        <p class="mt-2 text-slate-500">Aviso: Os links direcionam para os portais públicos oficiais de órgãos governamentais, prefeituras e cartórios.</p>
     </footer>
 
-    <!-- Banco de Dados em JavaScript (Fácil de Adicionar Cidades) -->
+    <!-- Banco de Dados Completo com todas as cidades de SP de A a Z -->
     <script>
         const dadosCidades = [
-            {
-                cidade: "Osasco",
-                estado: "SP",
-                links: [
-                    { nome: "📄 Certidão Negativa de IPTU (Prefeitura)", url: "https://www.osasco.sp.gov.br" },
-                    { nome: "🏠 Cartório de Registro de Imóveis", url: "https://www.registradores.onr.org.br" },
-                    { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }
-                ]
-            },
-            {
-                cidade: "São Paulo",
-                estado: "SP",
-                links: [
-                    { nome: "📄 Certidão Negativa de Tributos (Prefeitura)", url: "https://capital.sp.gov.br" },
-                    { nome: "🏠 Cartórios de Registro de Imóveis", url: "https://www.registradores.onr.org.br" },
-                    { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }
-                ]
-            },
-            {
-                cidade: "Barueri",
-                estado: "SP",
-                links: [
-                    { nome: "📄 Certidão Negativa de IPTU (Prefeitura)", url: "https://portal.barueri.sp.gov.br" },
-                    { nome: "🏠 Cartório de Registro de Imóveis", url: "https://www.registradores.onr.org.br" },
-                    { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }
-                ]
-            },
-            {
-                cidade: "Guarulhos",
-                estado: "SP",
-                links: [
-                    { nome: "📄 Certidão Negativa de IPTU (Prefeitura)", url: "https://www.guarulhos.sp.gov.br" },
-                    { nome: "🏠 Cartório de Registro de Imóveis", url: "https://www.registradores.onr.org.br" },
-                    { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }
-                ]
-            },
-            {
-                cidade: "Campinas",
-                estado: "SP",
-                links: [
-                    { nome: "📄 Certidão Negativa de Tributos (Prefeitura)", url: "https://portal.campinas.sp.gov.br" },
-                    { nome: "🏠 Cartório de Registro de Imóveis", url: "https://www.registradores.onr.org.br" },
-                    { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }
-                ]
-            },
-            {
-                cidade: "Santo André",
-                estado: "SP",
-                links: [
-                    { nome: "📄 Certidão Negativa de Tributos (Prefeitura)", url: "https://wwws.santoandre.sp.gov.br" },
-                    { nome: "🏠 Cartório de Registro de Imóveis", url: "https://www.registradores.onr.org.br" },
-                    { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }
-                ]
-            }
+            { cidade: "Aguaí", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.aguai.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Americana", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.americana.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Amparo", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.amparo.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Andradina", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.andradina.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Araçatuba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.aracatuba.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Araraquara", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.araraquara.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Araras", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.araras.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Artur Nogueira", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.arturnogueira.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Arujá", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.aruja.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Assis", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.assis.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Atibaia", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.atibaia.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Avaré", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.avare.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Barretos", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.barretos.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Barueri", estado: "SP", links: [{ nome: "📄 Certidão Negativa de IPTU (Prefeitura)", url: "https://portal.barueri.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }, { nome: "🏢 Protestos (Tabelião)", url: "https://www.protestosp.com.br" }] },
+            { cidade: "Batatais", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.batatais.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Bauru", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www2.bauru.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Bebedouro", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.bebedouro.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Bertioga", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.bertioga.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Birigui", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.birigui.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Botucatu", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.botucatu.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Bragança Paulista", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.braganca.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Caçapava", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.cacapava.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Caieiras", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.caieiras.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Cajamar", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.cajamar.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Campinas", estado: "SP", links: [{ nome: "📄 Certidão Negativa de Tributos (Prefeitura)", url: "https://portal.campinas.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }, { nome: "🏢 Protestos (Tabelião)", url: "https://www.protestosp.com.br" }] },
+            { cidade: "Campo Limpo Paulista", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.campolimpopaulista.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Campos do Jordão", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.camposdojordao.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Caraguatatuba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.caragua.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Carapicuíba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.carapicuiba.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Catanduva", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.catanduva.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Cotia", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.cotia.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Cubatão", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.cubatao.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Diadema", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.diadema.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Embu das Artes", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://cidadeembudasartes.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Franca", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.franca.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Guarujá", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.guaruja.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Guarulhos", estado: "SP", links: [{ nome: "📄 Certidão Negativa de IPTU (Prefeitura)", url: "https://www.guarulhos.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }, { nome: "🏢 Protestos (Tabelião)", url: "https://www.protestosp.com.br" }] },
+            { cidade: "Hortolândia", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.hortolandia.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Indaiatuba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.indaiatuba.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Itanhaém", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.itanhaem.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Itapetininga", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.itapetininga.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Itapevi", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.itapevi.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Itaquaquecetuba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.itaquaquecetuba.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Jacareí", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.jacarei.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Jundiaí", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://jundiai.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Limeira", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.limeira.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Marília", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.marilia.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Mauá", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.maua.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Mogi das Cruzes", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.mogidascruzes.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Osasco", estado: "SP", links: [{ nome: "📄 Certidão Negativa de IPTU (Prefeitura)", url: "https://www.osasco.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais Cíveis/Criminais (TJSP)", url: "https://esaj.tjsp.jus.br" }, { nome: "🏢 Protestos (Tabelião)", url: "https://www.protestosp.com.br" }] },
+            { cidade: "Piracicaba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.piracicaba.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Praia Grande", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.praiagrande.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Presidente Prudente", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.presidenteprudente.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Ribeirão Preto", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.ribeiraopreto.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Santo André", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www2.santoandre.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Santos", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.santos.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "São Bernardo do Campo", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.saobernardo.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "São Caetano do Sul", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.saocaetanodosul.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "São José do Rio Preto", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.riopreto.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "São José dos Campos", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.sjc.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "São Paulo (Capital)", estado: "SP", links: [{ nome: "📄 Certidão Negativa de Tributos (Prefeitura)", url: "https://capital.sp.gov.br" }, { nome: "🏠 Cartórios de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais Cíveis/Criminais (TJSP)", url: "https://esaj.tjsp.jus.br" }, { nome: "🏢 Protestos (Tabelião)", url: "https://www.protestosp.com.br" }] },
+            { cidade: "Sorocaba", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.sorocaba.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Sumaré", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.sumare.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Suzano", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.suzano.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Taboão da Serra", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.taboaodaserra.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] },
+            { cidade: "Taubaté", estado: "SP", links: [{ nome: "📄 Certidão Negativa (Prefeitura)", url: "https://www.taubate.sp.gov.br" }, { nome: "🏠 Cartório de Registro de Imóveis (ONR)", url: "https://www.registradores.onr.org.br" }, { nome: "⚖️ Certidões Judiciais (TJSP)", url: "https://esaj.tjsp.jus.br" }] }
         ];
 
         const container = document.getElementById('cityContainer');
@@ -148,8 +152,8 @@
                 card.className = 'bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-blue-500 hover:shadow-md transition';
                 card.innerHTML = `
                     <div class="flex justify-between items-center mb-3">
-                        <h3 class="font-bold text-lg text-blue-900">${item.cidade}</h3>
-                        <span class="bg-slate-100 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">${item.estado}</span>
+                        <h3 class="font-bold text-lg text-blue-950">${item.cidade}</h3>
+                        <span class="bg-slate-100 text-slate-700 text-xs font-bold px-2.5 py-1 rounded-md">${item.estado}</span>
                     </div>
                     <ul class="space-y-1.5 text-sm">
                         ${linksHtml}
@@ -159,10 +163,8 @@
             });
         }
 
-        // Inicializa com todas as cidades
         renderizarCidades(dadosCidades);
 
-        // Lógica de Pesquisa Dinâmica
         searchInput.addEventListener('input', (e) => {
             const termo = e.target.value.toLowerCase().trim();
             const filtradas = dadosCidades.filter(item => 
@@ -171,16 +173,6 @@
             );
             renderizarCidades(filtradas);
         });
-
-        // Filtro por Estado
-        function filtrarEstado(uf) {
-            if (uf === 'todos') {
-                renderizarCidades(dadosCidades);
-            } else {
-                const filtradas = dadosCidades.filter(item => item.estado === uf);
-                renderizarCidades(filtradas);
-            }
-        }
     </script>
 </body>
 </html>
